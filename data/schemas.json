@@ -1,0 +1,32 @@
+{
+  "Me":{
+      "name": "text",
+      "profession": "richtext",
+      "imgUrl":"",
+      "email": "text",
+      "birthDate": "text",
+      "description": "richtext",
+      "slug": "text",
+      "resume":"text",
+      "personalSite":"text",
+      "interests":"richtext"
+
+  },
+  "Posts": {
+    "title": "text",
+    "preview": "textarea",
+    "body": "textarea",
+    "id":"integer",
+    "imgUrl":"text",
+    "slug":"text",
+    "publishedAt":"date"
+  },
+  "Love": {
+    "description": "text",
+    "id": "integer",
+    "imgUrl":"text",
+    "copyright":"url"
+  
+  }
+ 
+}
