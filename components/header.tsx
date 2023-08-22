@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Icon } from '@iconify/react';
+import styles from '../styles/Home.module.css'
 const Header = () => {
   return (
 
@@ -19,15 +20,15 @@ const Header = () => {
 				<span className = "country-code text-gray-600 text-xs">TR</span>
 			</div>
 		</div>
-		<div className="w-1/3 p-1  relative mb-4 flex  flex-wrap items-stretch">
+		<div className="search-bar p-1   relative mb-4 flex  flex-wrap items-stretch">
 		<input style={{borderColor:'gray' }}
-      type="search"
-      className="rounded-l-[19px] border-2 h-10 relative border-gray-900 m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+         type="search"
+      className="rounded-input border-2 h-10 relative border-gray-900 m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
       placeholder="Search"
       aria-label="Search"
       aria-describedby="button-addon3" />
 		  <button style={{backgroundColor:"#F2F2F2",borderColor:'#9BA4B5' }}
-      className="rounded-r-[19px] rounded-r-3xl relative rounded-r border-2 px-6 py-2 h-10 text-xs font-medium uppercase text-gray-900 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+      className="rounded-button relative  border-2 px-6 py-2 h-10 text-xs font-medium uppercase text-gray-900 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
       type="button"
       id="button-addon3"
       data-te-ripple-init>
@@ -55,6 +56,20 @@ const Header = () => {
 				</span>
 			</button>
 		</div>
+		
+		
+		<style jsx>{`
+         .rounded-input{
+			border-radius:25px 0 0 25px ;
+		 }
+         .rounded-button{
+			border-radius:0 25px 25px 0 ;
+		 }
+		 .search-bar{
+			width:39rem;
+		 }
+      `}</style>
+
 	</header>
 
 

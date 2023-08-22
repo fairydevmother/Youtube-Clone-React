@@ -336,7 +336,7 @@ hr {
 }
 
 .active {
-	background-color: #030303;
+	
 	color: #ffffff;
 }
 
@@ -602,4 +602,10 @@ hr {
 
 .search-b{
 	width: 400px;
+}
+
+
+
+.round{
+	border-radius:0% 18px 0% 0% ;
 }
